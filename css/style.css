@@ -1,20 +1,24 @@
 /*body*/
-html, body {
-	margin: 0;
-	padding: 0;
+html,body{
+	padding: 0px;
+	margin: 0px;
 }
+
 body{
-	background-image: url(../img/item3.png );
+	background-image: url('img/item3.png');
 	background-size: 100% auto;
 	background-position: center top;
+	font-size: 24px;
 }
 
 /*wrapper*/
 
-#wrapper{
+.wrapper{
 	width: 80%;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 	box-sizing: content-box;
 	-moz-box-sizing:content-box;
 }
@@ -23,6 +27,8 @@ body{
 
 
 header{
+	padding: 0;
+	margin: 0;
 	width:100%;
 	height: auto;
 	display:inline-flex;
@@ -42,10 +48,9 @@ header{
 }
 
 .header-social{
-	width: 200px;
+	width: auto;
 	height: auto;
 	padding: 0;
-	line-height: auto;
 	color: white;
 	font-weight: unset;
 	font-size: 3em;
@@ -62,6 +67,7 @@ main{
 	flex-flow:row wrap;
 	justify-content: center;
 	align-items:center;
+	clear: both;
 }
 .nav1{
 	flex-basis:auto;
@@ -69,6 +75,7 @@ main{
 	color: white;
 	font-size: 3em;
 	text-align: center;
+	float: left;
 }
 
 .nav2{
@@ -78,6 +85,7 @@ main{
 	font-size: 3em;
 	text-align: center;
 	align-items: baseline;
+	float: left;
 }
 
 
@@ -94,50 +102,46 @@ button{
 button:focus{
 	outline: none;
 }
-section.flat button{
+div.flat button{
 	color: #fff;
 	background-color: #6496c8;
-	text-shadow: -1px 1px #417cb8;
 	border: none;
 }
 
-section.flat button:hover,
-section.flat button.hover{
+div.flat button:hover,
+div.flat button.hover{
 	background-color: #346392;
-	text-shadow: -1px 1px #27496d;
 }
 
-section.flat button:active,
-section.flat button.active{
+div.flat button:active,
+div.flat button.active{
 	background-color: #27496d;
-	text-shadow: -1px 1px #193047;
 }
-.btn-nav {
+.btn-nav{
 	width: 130px;
 	height: 130px;
 }
-#btn-1{
-	background-image: url('../img/btn1.jpg');
+#btn1{
+	background-image: url(img/btn1.jpg);
 }
-#btn-2{
-	background-image: url('../img/btn2.jpg');
+#btn2{
+	background-image: url(img/btn2.jpg);
 }
-#btn-3{
-	background-image: url('../img/btn3.jpg');
+#btn3{
+	background-image: url(img/btn3.jpg);
 }
-#btn-4{
-	background-image: url('../img/btn4.jpg');
+#btn4{
+	background-image: url(img/btn4.jpg);
 }
-#btn-5{
-	background-image: url('../img/btn5.jpg');
+#btn5{
+	background-image: url(img/btn5.jpg);
 }
-#btn-6{
-	background-image: url('../img/btn6.jpg');
+#btn6{
+	background-image: url(img/btn6.jpg);
 }
-#btn-7{
-	background-image: url('../img/btn7.jpg');
+#btn7{
+	background-image: url(img/btn7.jpg);
 }
-
 
 
 /*------work-nav------*/
@@ -147,7 +151,7 @@ section.flat button.active{
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	background-color:#27496d;
-	color:rgb(255,255,250);
+	color:rgb(255,255,250); 
 }
 .nav-left{
 	margin:10px auto 10px 10px;
@@ -166,3 +170,128 @@ section.flat button.active{
 .nav-right-item{
 
 }
+.work-main{
+	display:flex;
+	height: 500px;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-items:center;
+	overflow: scroll;
+}
+.work-main-item{
+	background: rgba(103, 140, 168, 0.73);
+	padding: 5px;
+	width: 200px;
+	height: 150px;
+	margin-top: 10px;
+	line-height: 150px;
+	color: white;
+	font-weight: normal;
+	font-size: 3em;
+	text-align: center;
+}
+
+
+/*------glyphicons------*/
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+
+	src: url('glyphicons-halflings-regular.eot');
+	src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('glyphicons-halflings-regular.woff2') format('woff2'), url('glyphicons-halflings-regular.woff') format('woff'), url('glyphicons-halflings-regular.ttf') format('truetype'), url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	line-height: auto;
+	color: #fff;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-arrow-left:before {
+	content: "\e091";
+	padding-right: 10px; 
+}
+.glyphicon-phone:before {
+	content: "\e145";
+}
+
+
+.contact-main{
+	width:100%;
+	margin:0px auto 0px auto;
+	font-family: 'Ubuntu', sans-serif;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: space-around;
+	background-color:#226c02;
+	align-content: center;
+	color:rgb(250,240,230);
+}
+.contact-main-item{
+	width:40%;
+	margin: 3em 0px 3em 0px ;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+/* *{
+	border: 1px solid red;
+	} */
+	.contact-item-head{
+		display: flex;
+		padding-bottom: 1em;
+		align-items: center;
+	}
+	.contact-head-1{
+		font-weight: bold;
+		font-size: 2.6em;
+		margin-right: 5px;
+	}
+	.contact-head-2{
+		font-size: .9em;
+	}
+	.contact-item-quote{
+		text-align: justify;
+		font-size: .6em;
+		margin-bottom:2em;
+	}
+	.contact-item-social{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.contact-social-item{
+		margin: 10px;
+		text-align: center;
+	}
+
+	.contact-item-form{
+		display: flex;
+		flex-direction: column;
+		margin:10px 0px 10px 0px; 
+	}
+	.contact-form-item{
+		margin-bottom: .8em;
+	}
+	i{
+		font-size: 4em;
+		color: rgb(250,240,230);
+	}
+	.contact-form-button{
+		padding: 15px;
+		font-size: .6em;
+		background-color: rgb(0,0,0);
+		color: rgb(250,240,230);
+		font-weight:bold;
+		width: 50%;
+		border: none;
+	}
+	.contact-social-content{
+		margin-left: .8em;
+	}
