@@ -62,34 +62,24 @@ header{
 /*------main section------*/
 
 main{
-	display:flex;
-	height: 500px;
-	flex-flow:row wrap;
+	height: auto;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	align-content: center;
 	justify-content: center;
-	align-items:center;
-	clear: both;
 }
-.nav1{
-	flex-basis:auto;
+
+.main-sub{
+	display: flex;
 	height: auto;
-	color: white;
-	font-size: 3em;
-	text-align: center;
-	float: left;
+	width:34%;
+	margin: 5px;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
 }
 
-.nav2{
-	flex-basis: auto;
-	height: auto;
-	color: white;
-	font-size: 3em;
-	text-align: center;
-	align-items: baseline;
-	float: left;
-}
-
-
-/*------tiles------*/
+/*------button------*/
 
 button{
 	display: inline-block;
@@ -99,51 +89,56 @@ button{
 	appearance:none;
 	box-shadow: none;
 }
-button:focus{
+/* -----tiles----- */
+
+.tile{
+	color:  rgb(250,240,230);
+	text-align: center;
+	width:126px;
+	height:126px;
+	margin: 10px;
+	display: block;
+}
+
+.tile1{
+	background-color:#004b83 ;
+}				
+.tile2{
+	background-color: #3bb1ba;
+}
+.tile3{
+	background-color: #3582BA;
+}
+.tile4{
+	background-color: #004D44;
+}
+.tile5{
+	background-color: #3498db;
+}
+.tile6{
+	background-color: #3bb1ba;
+}
+.tile7{
+	background-color: #71cbd2;
+}
+.tile>i{
+	font-size: 70px;
+	padding-top: 25px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #346392;
+}
+div.tile a.hover{
+	color: #27496d
+}
+a:focus{
 	outline: none;
 }
-div.flat button{
-	color: #fff;
-	background-color: #6496c8;
-	border: none;
-}
 
-div.flat button:hover,
-div.flat button.hover{
-	background-color: #346392;
-}
-
-div.flat button:active,
-div.flat button.active{
-	background-color: #27496d;
-}
-.btn-nav{
-	width: 130px;
-	height: 130px;
-}
-#btn1{
-	background-image: url(img/btn1.jpg);
-}
-#btn2{
-	background-image: url(img/btn2.jpg);
-}
-#btn3{
-	background-image: url(img/btn3.jpg);
-}
-#btn4{
-	background-image: url(img/btn4.jpg);
-}
-#btn5{
-	background-image: url(img/btn5.jpg);
-}
-#btn6{
-	background-image: url(img/btn6.jpg);
-}
-#btn7{
-	background-image: url(img/btn7.jpg);
-}
-
-
+/*------work page------*/
 /*------work-nav------*/
 .work-nav{
 	width: 100%;
@@ -170,6 +165,7 @@ div.flat button.active{
 .nav-right-item{
 
 }
+/* work main part */
 .work-main{
 	display:flex;
 	height: 500px;
@@ -221,7 +217,7 @@ div.flat button.active{
 	content: "\e145";
 }
 
-
+/*------contact page------*/
 .contact-main{
 	width:100%;
 	margin:0px auto 0px auto;
@@ -240,9 +236,7 @@ div.flat button.active{
 	flex-direction: column;
 	align-items: flex-start;
 }
-/* *{
-	border: 1px solid red;
-	} */
+
 	.contact-item-head{
 		display: flex;
 		padding-bottom: 1em;
