@@ -37,16 +37,27 @@ header{
 	align-items:baseline;
 }
 .header-logo{
-	width: 200px;
 	height: auto;
-	padding:0px 0px 0px 10px;
+	width: 200px;
+	display: inline-flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
 	line-height: 110px;
+}
+.logo-img{
+	height: auto;
+	width:35%;
+	margin-top: 10px;
+}
+.logo-name{
 	color: white;
 	font-weight: lighter;
-	font-size: 3em;
+	font-size: 2em;
 	text-align: left;
+	height: auto;
+	width:60%;
 }
-
 .header-social{
 	width: auto;
 	height: auto;
@@ -98,6 +109,7 @@ button{
 	height:126px;
 	margin: 10px;
 	display: block;
+	font-size: 1.5em;
 }
 
 .tile1{
@@ -130,9 +142,6 @@ a{
 }
 a:hover{
 	color: #346392;
-}
-div.tile a.hover{
-	color: #27496d
 }
 a:focus{
 	outline: none;
